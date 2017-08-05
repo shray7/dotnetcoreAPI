@@ -1,0 +1,9 @@
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.deps.json
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.runtimeconfig.json
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.runtimeconfig.dev.json
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.dll
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.pdb
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.csprojResolveAssemblyReference.cache
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.AssemblyInfo.cs
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.dll
+c:\users\shray\documents\visual studio 2017\Projects\Core.Api\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.pdb
