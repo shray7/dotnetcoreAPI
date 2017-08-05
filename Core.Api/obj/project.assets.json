@@ -10867,10 +10867,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shray\\documents\\visual studio 2017\\Projects\\Core.Api\\Core.Api\\Core.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.Api\\Core.Api.csproj",
       "projectName": "Core.Api",
-      "projectPath": "C:\\Users\\Shray\\documents\\visual studio 2017\\Projects\\Core.Api\\Core.Api\\Core.Api.csproj",
-      "outputPath": "C:\\Users\\Shray\\documents\\visual studio 2017\\Projects\\Core.Api\\Core.Api\\obj\\",
+      "projectPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.Api\\Core.Api.csproj",
+      "outputPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.Api\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

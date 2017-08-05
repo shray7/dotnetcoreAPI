@@ -9,7 +9,7 @@ using Core.Api.Filters;
 
 namespace Core.Api.Controllers
 {
-    [LogTimeFilter]
+    //[LogTimeFilter]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
