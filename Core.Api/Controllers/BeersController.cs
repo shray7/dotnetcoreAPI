@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Core.DataLayer;
 using Core.Models;
+using Core.Api.Filters;
 
 namespace Core.Api.Controllers
 {
-    //[LogTimeFilter]
+    [LogTimeFilter]
     [Route("api/[controller]")]
     public class BeersController : Controller
     {
