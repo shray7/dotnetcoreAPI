@@ -1,6 +1,6 @@
 ﻿namespace Core.Api.Models
 {
-    public partial class Beers 
+    public class Beers 
     {
         public int Id { get; set; }
         public string Abv { get; set; }

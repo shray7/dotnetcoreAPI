@@ -30,10 +30,6 @@ namespace Core.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBrewery([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
 
             var brewery = await _context.Brewery.SingleOrDefaultAsync(m => m.BreweryId == id);
 
@@ -44,12 +40,7 @@ namespace Core.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBrewery([FromRoute] int id, [FromBody] Brewery brewery)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != brewery.BreweryId)
+             if (id != brewery.BreweryId)
             {
                 return BadRequest();
             }
@@ -62,7 +53,7 @@ namespace Core.Api.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!BreweryExists(id))
+                if (!_context.Brewery.Any(e => e.BreweryId == id))
                 {
                     return NotFound();
                 }
@@ -79,12 +70,9 @@ namespace Core.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> PostBrewery([FromBody] Brewery brewery)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Brewery.Add(brewery);
+            var breweries = _context.Brewery;
+            brewery.BreweryId = breweries.Count() + 1;
+            breweries.Add(brewery);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetBrewery", new { id = brewery.BreweryId }, brewery);
@@ -94,22 +82,12 @@ namespace Core.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBrewery([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             var brewery = await _context.Brewery.SingleOrDefaultAsync(m => m.BreweryId == id);
 
             _context.Brewery.Remove(brewery);
             await _context.SaveChangesAsync();
 
             return Ok(brewery);
-        }
-
-        private bool BreweryExists(int id)
-        {
-            return _context.Brewery.Any(e => e.BreweryId == id);
         }
     }
 }

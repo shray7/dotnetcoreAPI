@@ -1,6 +1,8 @@
-﻿namespace Core.Api.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Core.Api.Models
 {
-    public partial class Brewery 
+    public class Brewery 
     {
         public int BreweryId { get; set; }
         public string Name { get; set; }
