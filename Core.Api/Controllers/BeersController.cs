@@ -33,7 +33,9 @@ namespace Core.Api.Controllers
         public JsonResult Post([FromBody]Beers beer)
         {
             if (beer.Id != 0) return Json("Invalid Request");
+            beer.Id = _coreContext.Beers.Count() + 2;
             _coreContext.Beers.Add(beer);
+
             _coreContext.SaveChanges();
             return Json(beer);
         }

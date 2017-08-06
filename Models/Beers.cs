@@ -7,7 +7,6 @@ namespace Core.Api.Models
 {
     public partial class Beers 
     {
-        [Key]
         public int Id { get; set; }
         public string Abv { get; set; }
         public int Ibu { get; set; }

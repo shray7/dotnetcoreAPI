@@ -5,8 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Swagger;
+
 namespace Core.Api
 {
     public class Startup
@@ -29,17 +30,18 @@ namespace Core.Api
             // Add framework services.
             services.AddMvc();
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-            });
-
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
                 builder.AllowAnyOrigin()
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
+
+            // Register the Swagger generator, defining one or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
 
             var connectionString =  Configuration.GetConnectionString("Core");
             services.AddDbContext<CoreContext>(options => options.UseSqlServer(connectionString));
@@ -51,12 +53,11 @@ namespace Core.Api
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            
-            app.UseMvc();
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseMvcWithDefaultRoute();
+
             app.UseSwagger();
-            
+
             // Enable middleware to serve swagger-ui (HTML, JS, CSS etc.), specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {

@@ -10,7 +10,7 @@ using Core.Api.Models;
 namespace Core.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Breweries")]
+    [Route("api/[controller]")]
     public class BreweriesController : Controller
     {
         private readonly CoreContext _context;
