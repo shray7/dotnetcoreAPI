@@ -12,13 +12,11 @@ C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.runtimeconfig.dev.json
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.Api.pdb
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\DataLayer.dll
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Models.dll
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\DataLayer.pdb
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\DataLayer.dll.config
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Models.pdb
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Models.dll.config
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.csprojResolveAssemblyReference.cache
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.AssemblyInfo.cs
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\obj\Debug\netcoreapp1.1\Core.Api.pdb
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.DataLayer.dll
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.Models.dll
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.DataLayer.pdb
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Api\bin\Debug\netcoreapp1.1\Core.Models.pdb

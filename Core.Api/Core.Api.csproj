@@ -28,8 +28,8 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Core.DataLayer\Core.DataLayer.csproj" />
+    <ProjectReference Include="..\Core.Models\Core.Models.csproj" />
   </ItemGroup>
 
 </Project>

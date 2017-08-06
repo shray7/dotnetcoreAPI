@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Core.Api.Models
+﻿namespace Core.Api.Models
 {
     public class Brewery 
     {

@@ -4232,14 +4232,21 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "DataLayer/1.0.0": {
+      "Core.DataLayer/1.0.0": {
         "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "Models": "1.0.0"
+          "Core.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "NETStandard.Library": "1.6.1"
         }
       },
-      "Models/1.0.0": {
-        "type": "project"
+      "Core.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        }
       }
     }
   },
@@ -10916,20 +10923,21 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "DataLayer/1.0.0": {
+    "Core.DataLayer/1.0.0": {
       "type": "project",
-      "path": "../DataLayer/DataLayer.csproj",
-      "msbuildProject": "../DataLayer/DataLayer.csproj"
+      "path": "../Core.DataLayer/Core.DataLayer.csproj",
+      "msbuildProject": "../Core.DataLayer/Core.DataLayer.csproj"
     },
-    "Models/1.0.0": {
+    "Core.Models/1.0.0": {
       "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
+      "path": "../Core.Models/Core.Models.csproj",
+      "msbuildProject": "../Core.Models/Core.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "DataLayer >= 1.0.0",
+      "Core.DataLayer >= 1.0.0",
+      "Core.Models >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.1.1",
       "Microsoft.AspNetCore >= 1.1.2",
       "Microsoft.AspNetCore.Cors >= 1.1.2",
@@ -10943,7 +10951,6 @@
       "Microsoft.NETCore.App >= 1.1.2",
       "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 1.1.1",
-      "Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 1.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 1.0.0"
     ]
@@ -10965,11 +10972,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Models\\Models.csproj"
+            "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.DataLayer\\Core.DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.DataLayer\\Core.DataLayer.csproj"
             },
-            "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.Models\\Core.Models.csproj": {
+              "projectPath": "C:\\Users\\Shray\\Source\\Repos\\dotnetcoreAPI\\Core.Models\\Core.Models.csproj"
             }
           }
         }

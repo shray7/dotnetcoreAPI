@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Core.DataLayer;
-using Core.Api.Models;
+using Core.Models;
 
 namespace Core.Api.Controllers
 {

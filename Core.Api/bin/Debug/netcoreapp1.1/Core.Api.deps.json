@@ -23,7 +23,8 @@
     ".NETCoreApp,Version=v1.1": {
       "core.api/1.0.0": {
         "dependencies": {
-          "DataLayer": "1.0.0",
+          "Core.DataLayer": "1.0.0",
+          "Core.Models": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.1.1",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Cors": "1.1.2",
@@ -37,7 +38,6 @@
           "Microsoft.NETCore.App": "1.1.2",
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1",
-          "Models": "1.0.0",
           "Swashbuckle.AspNetCore": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "1.0.0"
         },
@@ -1880,23 +1880,28 @@
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "datalayer/1.0.0": {
+      "core.datalayer/1.0.0": {
         "dependencies": {
-          "Models": "1.0.0"
+          "Core.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "NETStandard.Library": "1.6.1"
         },
         "runtime": {
-          "DataLayer.dll": {}
+          "Core.DataLayer.dll": {}
         },
         "compile": {
-          "DataLayer.dll": {}
+          "Core.DataLayer.dll": {}
         }
       },
-      "models/1.0.0": {
+      "core.models/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
         "runtime": {
-          "Models.dll": {}
+          "Core.Models.dll": {}
         },
         "compile": {
-          "Models.dll": {}
+          "Core.Models.dll": {}
         }
       },
       "libuv/1.9.1": {
@@ -4397,12 +4402,12 @@
       "path": "system.text.encodings.web/4.3.1",
       "hashPath": "system.text.encodings.web.4.3.1.nupkg.sha512"
     },
-    "datalayer/1.0.0": {
+    "core.datalayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "models/1.0.0": {
+    "core.models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

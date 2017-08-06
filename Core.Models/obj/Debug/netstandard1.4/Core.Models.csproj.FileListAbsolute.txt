@@ -1,0 +1,7 @@
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\bin\Debug\netstandard1.4\Core.Models.deps.json
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\bin\Debug\netstandard1.4\Core.Models.dll
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\bin\Debug\netstandard1.4\Core.Models.pdb
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\obj\Debug\netstandard1.4\Core.Models.csprojResolveAssemblyReference.cache
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\obj\Debug\netstandard1.4\Core.Models.AssemblyInfo.cs
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\obj\Debug\netstandard1.4\Core.Models.dll
+C:\Users\Shray\Source\Repos\dotnetcoreAPI\Core.Models\obj\Debug\netstandard1.4\Core.Models.pdb

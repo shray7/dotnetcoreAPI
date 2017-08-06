@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Core.DataLayer;
-using Core.Api.Models;
+using Core.Models;
 
 namespace Core.Api.Controllers
 {
