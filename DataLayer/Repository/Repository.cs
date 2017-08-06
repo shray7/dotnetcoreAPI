@@ -1,5 +1,5 @@
-﻿using System;
-using System.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace DataLayer.Repository
@@ -11,7 +11,7 @@ namespace DataLayer.Repository
         {
             _context = context;
         }
-        private IDbSet<TEntity> DbSet
+        private DbSet<TEntity> DbSet
         {
             get
             {

@@ -1881,6 +1881,9 @@
         }
       },
       "datalayer/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "runtime": {
           "DataLayer.dll": {}
         },
@@ -1889,9 +1892,6 @@
         }
       },
       "models/1.0.0": {
-        "dependencies": {
-          "DataLayer": "1.0.0"
-        },
         "runtime": {
           "Models.dll": {}
         },

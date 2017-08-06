@@ -1,8 +1,4 @@
-﻿using DataLayer.Repository;
-using System;
-using System.Collections.Generic;
-
-namespace Core.Api.Models
+﻿namespace Core.Api.Models
 {
     public partial class Brewery 
     {

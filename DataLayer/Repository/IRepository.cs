@@ -1,5 +1,5 @@
-﻿using System;
-using System.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace DataLayer.Repository
@@ -17,7 +17,7 @@ namespace DataLayer.Repository
     }
     public interface IDbContext
     {
-        IDbSet<TEntity> Set<TEntity>() where TEntity : class;
+        DbSet<TEntity> Set<TEntity>() where TEntity : class;
         int SaveChanges();
         void Dispose();
     }

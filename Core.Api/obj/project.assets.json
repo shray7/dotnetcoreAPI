@@ -4233,13 +4233,13 @@
         }
       },
       "DataLayer/1.0.0": {
-        "type": "project"
-      },
-      "Models/1.0.0": {
         "type": "project",
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "Models": "1.0.0"
         }
+      },
+      "Models/1.0.0": {
+        "type": "project"
       }
     }
   },

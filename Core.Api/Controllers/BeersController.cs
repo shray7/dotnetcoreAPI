@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Core.DataLayer;
 using Core.Api.Models;
 
 namespace Core.Api.Controllers

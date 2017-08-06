@@ -1,7 +1,6 @@
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\Models.dll.config
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\Models.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\Models.pdb
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\DataLayer.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\EntityFramework.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
@@ -30,8 +29,6 @@ C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\System.Interactive.As
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\DataLayer.pdb
-C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\DataLayer.dll.config
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\EntityFramework.xml
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Shray\Source\Repos\dotnetcoreAPI\Models\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
