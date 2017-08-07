@@ -8,10 +8,10 @@ namespace Core.Api.Controllers
 {
     [LogTimeFilter]
     [Route("api/[controller]")]
-    public class BeersController : Controller
+    public class BeerController : Controller
     {
         private CoreContext _coreContext; 
-        public BeersController(CoreContext context)
+        public BeerController(CoreContext context)
         {
             _coreContext = context;
         }
@@ -19,24 +19,23 @@ namespace Core.Api.Controllers
         [HttpGet]
         public JsonResult Get()
         {
-            return Json(_coreContext.Beers);
+            return Json(_coreContext.Beer);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public JsonResult Get(int id)
         {
-            var result = _coreContext.Beers.SingleOrDefault(x => x.Id == id);
+            var result = _coreContext.Beer.SingleOrDefault(x => x.BeerId == id);
             return Json(result);
         }
 
         // POST api/values
         [HttpPost]
-        public JsonResult Post([FromBody]Beers beer)
+        public JsonResult Post([FromBody]Beer beer)
         {
-            if (beer.Id != 0) return Json("Invalid Request");
-            beer.Id = _coreContext.Beers.Count() + 2;
-            _coreContext.Beers.Add(beer);
+            if (beer.BeerId!= 0) return Json("Invalid Request");
+            _coreContext.Beer.Add(beer);
 
             _coreContext.SaveChanges();
             return Json(beer);
@@ -44,9 +43,10 @@ namespace Core.Api.Controllers
 
         // PUT api/values/5
         [HttpPut]
-        public void Put([FromBody]Beers value)
+        public void Put([FromBody]Beer value)
         {
-            var beer = _coreContext.Beers.SingleOrDefault(x => x.Id == value.Id);
+            var beer = _coreContext.Beer.SingleOrDefault(x => x.BeerId == value.BeerId);
+            
             beer.Name = value.Name;
             beer.Ounces = value.Ounces;
             beer.Ibu = value.Ibu;
@@ -59,8 +59,8 @@ namespace Core.Api.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var beerToDelete = _coreContext.Beers.FirstOrDefault(x => x.Id == id);
-            _coreContext.Beers.Remove(beerToDelete);
+            var beerToDelete = _coreContext.Beer.FirstOrDefault(x => x.BeerId == id);
+            _coreContext.Beer.Remove(beerToDelete);
             _coreContext.SaveChanges();
         }
     }

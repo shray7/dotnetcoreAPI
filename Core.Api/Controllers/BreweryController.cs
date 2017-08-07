@@ -10,11 +10,11 @@ namespace Core.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
-    public class BreweriesController : Controller
+    public class BreweryController : Controller
     {
         private readonly CoreContext _context;
 
-        public BreweriesController(CoreContext context)
+        public BreweryController(CoreContext context)
         {
             _context = context;
         }
@@ -71,7 +71,6 @@ namespace Core.Api.Controllers
         public async Task<IActionResult> PostBrewery([FromBody] Brewery brewery)
         {
             var breweries = _context.Brewery;
-            brewery.BreweryId = breweries.Count() + 1;
             breweries.Add(brewery);
             await _context.SaveChangesAsync();
 

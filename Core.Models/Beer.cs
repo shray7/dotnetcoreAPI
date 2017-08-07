@@ -1,8 +1,8 @@
 ﻿namespace Core.Models
 { 
-    public class Beers 
+    public class Beer 
     {
-        public int Id { get; set; }
+        public int BeerId { get; set; }
         public string Abv { get; set; }
         public int Ibu { get; set; }
         public int Bid { get; set; }
