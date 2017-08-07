@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Swagger;
 using Core.DataLayer;
+using Core.DataLayer.Interfaces;
+using Core.DataLayer.Repository;
 
 namespace Core.Api
 {
@@ -45,7 +47,8 @@ namespace Core.Api
 
             var connectionString =  Configuration.GetConnectionString("Core");
             services.AddDbContext<CoreContext>(options => options.UseSqlServer(connectionString));
-            
+            services.AddTransient<IBreweryManager, BreweryRepository>();
+            services.AddTransient<IBeerManager, BeerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

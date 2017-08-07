@@ -1,7 +1,5 @@
 ﻿using Core.DataLayer.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Core.Models;
 using Dapper;
 using System.Data.SqlClient;
@@ -18,28 +16,31 @@ namespace Core.DataLayer.Repository
         }
         public Brewery AddBrewery(Brewery brewery)
         {
-            db.Query<Brewery>("Insert into Brewery Values()").AsList();
+            db.Execute(string.Format("Insert into Brewery (Name, City, State)Values('{0}','{1}','{2}')", brewery.Name, brewery.City, brewery.State));
             return brewery;
         }
 
-        public void DeleteBrewery(Brewery brewery)
+        public void DeleteBrewery(int id)
         {
-            throw new NotImplementedException();
+            db.Execute(string.Format("Delete FROM Brewery WHERE Brewery.BreweryID = {0}", id));
         }
 
         public Brewery GetBrewery(int id)
         {
-            throw new NotImplementedException();
+            return db.QueryFirstOrDefault<Brewery>(string.Format("Select * From Brewery WHERE Brewery.BreweryID = {0}", id));
         }
 
         public IList<Brewery> GetList()
         {
+            
             return db.Query<Brewery>("Select * From Brewery").AsList();
         }
 
         public void UpdateBrewery(Brewery brewery)
         {
-            throw new NotImplementedException();
+            string sqlQuery = "UPDATE Brewery SET Name = @Name, City = @City, State = @State WHERE BreweryId = @BreweryId";
+
+            db.Execute(sqlQuery, brewery);
         }
     }
 }

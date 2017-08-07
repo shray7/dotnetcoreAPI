@@ -9,7 +9,7 @@ namespace Core.DataLayer.Interfaces
     {
         Brewery AddBrewery(Brewery brewery);
         void UpdateBrewery(Brewery brewery);
-        void DeleteBrewery(Brewery brewery);
+        void DeleteBrewery(int id);
         IList<Brewery> GetList();
         Brewery GetBrewery(int id);
     }
